@@ -1,0 +1,51 @@
+:root {
+  --bg: #f5f3ff;
+  --white: #fff;
+  --purple: #6c5ce7;
+  --purple2: #a29bfe;
+  --purple-pale: #eee9ff;
+  --navy: #1a0f4f;
+  --navy2: #2d1b8e;
+  --green: #00b894;
+  --green-pale: #d4f7ef;
+  --red: #e17055;
+  --red-pale: #fde8e3;
+  --yellow: #fdcb6e;
+  --yellow-pale: #fff5dc;
+  --text: #1a0f4f;
+  --text-mid: #5a5490;
+  --text-soft: #a09cc0;
+  --border: #e5e0ff;
+  --dark: #181433;
+  --dark2: #1e1a3a;
+  --r: 16px;
+  --r-sm: 10px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Noto Sans Thai', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+button  { cursor: pointer; font-family: 'Noto Sans Thai', sans-serif; }
+input, select, textarea { font-family: 'Noto Sans Thai', sans-serif; }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-thumb { background: var(--purple2); border-radius: 4px; }
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes toastIn {
+  from { opacity: 0; transform: translateX(28px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes toastOut {
+  from { opacity: 1; }
+  to   { opacity: 0; transform: translateX(28px); }
+}
